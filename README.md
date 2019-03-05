@@ -1,4 +1,4 @@
-# vcoptimizations
+# Vehicle Classifier Optimizations
 
 'inference/' contains the OpenCL implementation separable convolution version of the network. The program does a performance measurement for each value of K from 1 to 16.
 

@@ -1,13 +1,7 @@
 #DESCRIPTION (to be modified):
 # Load old trained weights.
-# For each layer, identify weights with smallest values ( w < T) and prune them (x0; don't worry about speeding up now)
+# For each layer, identify weights with smallest values ( w < T) and prune them, then retrain with L2 regularization and repeat
 
-#***
-#load original weights in matlab, save as .mat.
-#load .mat in python
-#find v and h for these weights.
-#save v and h as .mat
-#verify results of vh convolution in matlab
 
 from utils import *
 #^ imports plot, np and stuff
@@ -495,11 +489,6 @@ for stg in range(0,tune_stages):
 
         tune_acc[stg,e]=np.mean(mean_val_acc);
         tune_train_acc[stg,e]= np.mean(mean_loss);
-
-
-    #--------------------------------------------
-    #   down to here should be obvious
-    #--------------------------------------------
 
 
 

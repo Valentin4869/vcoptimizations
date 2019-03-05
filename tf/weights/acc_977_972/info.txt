@@ -1,0 +1,1 @@
+(I think) These are the weights for a network using the original architecture, trained again in TF.
